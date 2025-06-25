@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dream Cricket Team</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="assets/team-logo.png" alt="Team Logo" class="logo" />
+    <h1>Blazing Strikers</h1>
+    <p class="slogan">"Strike Hard, Win Harder!"</p>
+  </header>
+
+  <main class="card-grid" id="team">
+    <!-- Player cards dynamically added here -->
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2 id="modal-name"></h2>
+      <img id="modal-img" src="" alt="Player" />
+      <ul id="modal-stats"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
