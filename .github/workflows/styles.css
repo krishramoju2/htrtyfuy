@@ -1,0 +1,89 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+}
+
+.logo {
+  height: 80px;
+}
+
+.slogan {
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.close-btn {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: -10px;
+}
